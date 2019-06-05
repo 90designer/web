@@ -6,3 +6,9 @@
 
 .text-main {
   color: #010101; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: red;
+  color: white; }
