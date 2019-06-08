@@ -8,6 +8,26 @@
 .container { 
     width: $container;
     margin: 0 auto;
-    background-color: red;
-    color: white;
 }
+
+//header
+.logo {
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    img { display: block; }
+} 
+
+
+// clearfix 清除浮动
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+ .clearfix{ display: inline-block; }
+* html .clearfix{ height: 1%; }
+.clearfix { display: block; }
+    
