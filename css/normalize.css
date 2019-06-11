@@ -48,7 +48,7 @@
     margin: 0;
     color: #010101;
     font-family: 'Microsoft YaHei';
-    font-weight: bold;
+    font-size: 12px;
   }
   
   /**
@@ -98,7 +98,9 @@
   
   a {
     background-color: transparent;
+    text-decoration: none;
   }
+
   
   /**
    * 1. Remove the bottom border in Chrome 57-

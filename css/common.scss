@@ -10,13 +10,49 @@
     margin: 0 auto;
 }
 
+.pull-left { float: left; }
+.pull-right { float: right; }
+
 //header
 .logo {
-    float: left;
     margin-top: 30px;
     margin-bottom: 30px;
     img { display: block; }
 } 
+
+// 顶部的菜单
+.menu-link {
+    line-height: 22px;
+    a, span, div { float: right; }
+    a { color: $text-gray; }
+    .link {
+        width: 1px;
+        height: 12px;
+        margin: 6px 11px 0;
+        background-color: #cfcfcf;
+    }
+}
+
+// 语言菜单
+.lang {
+    width: 53px;
+    height: 22px;
+    background-color: #ececec;
+    color: $text-gray;
+    text-align: center;
+    i {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin: 0 0 2px 2px;
+        border-left: 1px solid #b5b5b5;
+        border-bottom: 1px solid #b5b5b5;
+        // Css3
+        @include webkit(box-sizing, border-box);
+        @include webkit(transform, rotate(-45deg));
+    }
+}
+
 
 
 // clearfix 清除浮动

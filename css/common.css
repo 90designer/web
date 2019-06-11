@@ -11,12 +11,53 @@
   width: 1200px;
   margin: 0 auto; }
 
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
 .logo {
-  float: left;
   margin-top: 30px;
   margin-bottom: 30px; }
   .logo img {
     display: block; }
+
+.menu-link {
+  line-height: 22px; }
+  .menu-link a, .menu-link span, .menu-link div {
+    float: right; }
+  .menu-link a {
+    color: #a0a0a0; }
+  .menu-link .link {
+    width: 1px;
+    height: 12px;
+    margin: 6px 11px 0;
+    background-color: #cfcfcf; }
+
+.lang {
+  width: 53px;
+  height: 22px;
+  background-color: #ececec;
+  color: #a0a0a0;
+  text-align: center; }
+  .lang i {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 0 2px 2px;
+    border-left: 1px solid #b5b5b5;
+    border-bottom: 1px solid #b5b5b5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .clearfix:after {
   content: ".";
