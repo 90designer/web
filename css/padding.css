@@ -9,15 +9,17 @@ body {
     background-color: #e7e7e7;
 }
 .level-2 {
+    position: relative;
     background-color: #9a9489;
 }
 .level-3 {
+    
     background-color: #545049;
 }
 body .position {
     position: absolute;
     left: 0;
-    right: 0;
+    top: 0;
     width: 150px;
     height: 150px;
     padding: 0;
