@@ -40,7 +40,8 @@
     background-color: #ececec;
     color: $text-gray;
     text-align: center;
-    i {
+    &:after {
+        content: '';
         display: inline-block;
         width: 6px;
         height: 6px;

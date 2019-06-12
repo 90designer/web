@@ -41,7 +41,8 @@
   background-color: #ececec;
   color: #a0a0a0;
   text-align: center; }
-  .lang i {
+  .lang:after {
+    content: '';
     display: inline-block;
     width: 6px;
     height: 6px;
