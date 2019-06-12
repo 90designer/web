@@ -1,0 +1,29 @@
+ul, li { padding: 0; margin: 0; }
+body {
+    padding: 0 300px;
+}
+.padding div {
+    padding: 100px;
+}
+.level-1 {
+    background-color: #e7e7e7;
+}
+.level-2 {
+    background-color: #9a9489;
+}
+.level-3 {
+    background-color: #545049;
+}
+body .position {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    background-color: #cc5f07;
+    color: #000;
+    line-height: 150px;
+    text-align: center;
+    font-size: 12px;
+}
