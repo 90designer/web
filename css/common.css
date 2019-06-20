@@ -17,6 +17,15 @@
 .pull-right {
   float: right; }
 
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
 .logo {
   margin-top: 30px;
   margin-bottom: 30px; }
@@ -194,6 +203,30 @@ body > footer {
   background: url(../images/icon-share.png) no-repeat -30px 0 #a0a0a0; }
   .wechat-share:hover {
     background-color: #3cb035; }
+
+.footer-menu dl {
+  float: left;
+  width: 75px;
+  margin-left: 38px; }
+  .footer-menu dl img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 9px;
+    border: 2px solid #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+.footer-menu dt {
+  padding-bottom: 17px;
+  margin-bottom: 14px;
+  margin-top: 6px;
+  border-bottom: 1px solid #c5c5c5; }
+.footer-menu dd {
+  line-height: 24px; }
+.footer-menu a {
+  color: #717171; }
 
 .clearfix:after {
   content: ".";

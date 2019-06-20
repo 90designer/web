@@ -10,8 +10,14 @@
     margin: 0 auto;
 }
 
+// float
 .pull-left { float: left; }
 .pull-right { float: right; }
+
+// text-align
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
 
 //header
 .logo {
@@ -216,6 +222,33 @@ body > footer {
     background: url(../images/icon-share.png) no-repeat -30px 0 #a0a0a0;
     &:hover {
         background-color: #3cb035;
+    }
+}
+
+.footer-menu {
+    dl {
+        float: left;
+        width: 75px;
+        margin-left: 38px;
+        img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 9px;
+            border: 2px solid #fff;
+            @include webkit(box-sizing, border-box)
+        }
+    }
+    dt {
+        padding-bottom: 17px;
+        margin-bottom: 14px;
+        margin-top: 6px;
+        border-bottom: 1px solid #c5c5c5;
+    }
+    dd {
+        line-height: 24px;
+    }
+    a {
+         color: #717171;
     }
 }
 
