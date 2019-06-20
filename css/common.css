@@ -127,6 +127,74 @@ nav li {
     text-align: center;
     line-height: 53px; }
 
+body > footer {
+  padding-top: 74px;
+  background-color: #eaeaea; }
+
+#copyright {
+  margin-top: 59px;
+  border-top: 1px solid #dbdbdb;
+  line-height: 48px;
+  color: #a0a0a0; }
+
+.footer-contact-info h5 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #717171; }
+.footer-contact-info p {
+  font-size: 13px;
+  color: #a0a0a0;
+  line-height: 23px; }
+.footer-contact-info a {
+  color: #a0a0a0; }
+
+.share {
+  margin-top: 38px; }
+  .share a {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 24px;
+    background-color: #a0a0a0;
+    border-radius: 100px; }
+    .share a:hover p {
+      display: block; }
+  .share p {
+    display: none;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -44px;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 6px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.16)); }
+    .share p::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      margin-left: -4px;
+      border-top: 4px solid #fff;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent; }
+  .share img {
+    width: 100%;
+    height: 100%; }
+
+.sing-share {
+  background: url(../images/icon-share.png) no-repeat 0 0 #a0a0a0; }
+  .sing-share:hover {
+    background-color: #dc261b; }
+
+.wechat-share {
+  background: url(../images/icon-share.png) no-repeat -30px 0 #a0a0a0; }
+  .wechat-share:hover {
+    background-color: #3cb035; }
+
 .clearfix:after {
   content: ".";
   display: block;

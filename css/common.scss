@@ -142,6 +142,83 @@ nav {
     }
 }
 
+// footer
+body > footer {
+    padding-top: 74px;
+    background-color: #eaeaea;
+}
+#copyright {
+    margin-top: 59px;
+    border-top: 1px solid #dbdbdb;
+    line-height: 48px;
+    color: #a0a0a0;
+}
+.footer-contact-info {
+    h5 {
+        margin-bottom: 24px;
+        font-size: 24px;
+        color: #717171;
+    }
+    p {
+        font-size: 13px;
+        color: #a0a0a0;
+        line-height: 23px;
+    }
+    a { color: #a0a0a0; }
+}
+.share {
+    margin-top: 38px;
+    a {
+        position: relative;
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-right: 24px;
+        background-color: #a0a0a0;
+        // 圆角
+        border-radius: 100px;
+        &:hover {
+            p { display: block; }
+        }
+    }
+    p {
+        display: none;
+        position: absolute;
+        bottom: 150%;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin-left: -44px;
+        padding: 4px;
+        background-color: #fff;
+        border-radius: 6px;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, .16));
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            margin-left: -4px;
+            border-top: 4px solid #fff;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+        }
+    }
+    img { width: 100%; height: 100%; }
+}
+.sing-share {
+    background: url(../images/icon-share.png) no-repeat 0 0 #a0a0a0;
+    &:hover {
+        background-color: #dc261b;
+    }
+}
+.wechat-share {
+    background: url(../images/icon-share.png) no-repeat -30px 0 #a0a0a0;
+    &:hover {
+        background-color: #3cb035;
+    }
+}
+
 // clearfix 清除浮动
 .clearfix:after{
     content: ".";
