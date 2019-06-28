@@ -243,6 +243,22 @@ body > footer {
 .wechat-code {
   width: 78px; }
 
+.main-column {
+  padding: 90px 0 70px;
+  text-align: center; }
+  .main-column h4 {
+    font-size: 26px;
+    font-weight: normal; }
+  .main-column p {
+    margin-top: 12px;
+    color: #a0a0a0;
+    text-transform: Uppercase; }
+  .main-column span {
+    display: inline-block;
+    height: 10px;
+    margin: 0 9px;
+    border-left: 1px solid #cfcfcf; }
+
 .clearfix:after {
   content: ".";
   display: block;
