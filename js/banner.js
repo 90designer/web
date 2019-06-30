@@ -40,6 +40,7 @@ slideWrap.onmouseenter = function(){
     clearInterval(autoTimer)
 }
 slideWrap.onmouseleave = function(){
+    if(autoTimer) { clearInterval(autoTimer) }
     autoPlay()
 }
 // nextButton事件
@@ -58,7 +59,7 @@ prevButton.onclick = function(){
 function autoPlay(){
     autoTimer = setInterval(function(){
         next()
-    }, 3000)
+    }, 5000)
 }
 // next
 function next(){

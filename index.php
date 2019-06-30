@@ -140,8 +140,11 @@
                 care for teeth to create a better future
             </p>
         </div>
-
         <div class="info-list">
+            <div class="loading-wait">
+                加载中
+                <div class="loading-icon"><i class="iconfont icon-jiazai"></i></div>
+            </div>
             <ul class="clearfix">
                 <figure>
                     <img src="images/pic001.jpg" alt="郎朗口腔">
