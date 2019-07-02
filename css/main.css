@@ -69,7 +69,8 @@
     padding: 24px 0 10px;
     margin-bottom: 11px;
     border-bottom: 1px solid #d9d9d9;
-    font-size: 18px; }
+    font-size: 18px;
+    color: #010101; }
   .info-list p {
     line-height: 22px;
     color: #a0a0a0; }

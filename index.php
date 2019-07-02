@@ -141,11 +141,9 @@
             </p>
         </div>
         <div class="info-list">
-            <div class="loading-wait">
-                加载中
-                <div class="loading-icon"><i class="iconfont icon-jiazai"></i></div>
-            </div>
-            <ul class="clearfix">
+            <div id="infowListWrap"></div>
+            
+            <!-- <ul class="clearfix">
                 <figure>
                     <img src="images/pic001.jpg" alt="郎朗口腔">
                     <figcaption>郎朗口腔</figcaption>
@@ -161,7 +159,7 @@
                     <figcaption>郎朗口腔</figcaption>
                     <p>朗朗口腔拥有全球先进口腔诊疗技术，引进国外多款高端的齿科诊疗设备。包括：德国进口种植机...</p>
                 </figure>
-            </ul>
+            </ul> -->
             <a href="" class="more-link">查看更多</a>
         </div>
 
@@ -240,6 +238,54 @@
             <div id="copyright">© 2005 - 2016 朗朗口腔医疗投资有限公司 版权所有 粤ICP备08130115号-1</div>
         </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/banner.js"></script>
+    <script>
+        loadingMsg({
+            wrap: 'infowListWrap',
+            message: '加载中'
+        })
+        $.ajax({
+            url: "./data/index.php",    //请求的url地址
+            dataType: "json",   //返回格式为json
+            async: false, //请求是否异步，默认为异步，这也是ajax重要特性
+            cache: false, // 是否读取缓存
+            data: {
+                categoryId: 123456
+            },    //参数值
+            type: "POST",   //GET\POST
+            beforeSend: function() {},
+            success: function(req) {//请求成功时处理
+                let infoListWrap = document.getElementById('infowListWrap');
+                // 判断数据是否存在
+                if(!req.data || req.data.length === 0){ 
+                    loadingMsg({
+                        wrap: 'infowListWrap',
+                        message: '当前数据为空'
+                    })
+                    return false
+                }
+                // 处理数据
+                let ul = '<ul class="clearfix">'
+                req.data.forEach(item => {
+                    ul += `<figure>
+                        <a href="newsDetail.php?id=${item.id}">
+                        <img src="${item.imgUrl}" alt="${item.title}">
+                        <figcaption>${item.title}</figcaption>
+                        <p>${item.dec}</p>
+                        </a>
+                    </figure>`
+                })
+                ul += '</ul>'
+                // 请求成功后，处理视图DOM渲染
+                infoListWrap.innerHTML = ul
+            },
+            complete: function() {},
+            error: function() {
+                //请求出错处理
+            }
+        });
+    </script>
 </body>
 </html>
