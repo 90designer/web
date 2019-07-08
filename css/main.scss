@@ -90,3 +90,41 @@
         border-color: $color-main;
     }
 }
+/*朗朗公益*/
+.welfare {
+    header { background-color: #efefef; }
+}
+.welfare-wrap {
+    .row {
+        float: left;
+        width: 33.33333%;
+    }
+    .content-big { height: 380px; }
+    .content-small { height: 190px; }
+    .content-dec { 
+        padding: 42px 48px 0 40px;
+        .title {
+            font-size: 24px;
+        }
+        time { 
+            display: block;
+            padding: 14px 0 20px;
+            opacity: .5;
+            filter: alpha(opacity = 50);
+        }
+        .line {
+            display: block;
+            width: 38px;
+            border-top: 1px solid #cccccc;
+        }
+        .dec {
+            margin-top: 33px;
+            line-height: 24px;
+        }
+        .link-more { margin-top: 16px; }
+    }
+    .color-white {
+        .title, time, .dec, .link-more { color: #fff; }
+        .link-more { border-color: #fff; }
+    }
+}

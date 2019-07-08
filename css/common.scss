@@ -258,9 +258,8 @@ body > footer {
 
 // 主体内容标题
 .main-column {
-    padding: 90px 0 70px;
     text-align: center;
-    h4 {
+    h3 {
         font-size: 26px;
         font-weight: normal;
     }
@@ -294,6 +293,21 @@ body > footer {
     }
 }
 
+/* 查看更多 按钮*/
+.link-more {
+    display: block;
+    width: 92px;
+    height: 29px;
+    border: 1px solid #676767;
+    text-align: center;
+    line-height: 26px;
+    .iconfont {
+        position: relative;
+        top: 2px;
+        font-weight: 700;
+    }
+}
+
 // clearfix 清除浮动
 .clearfix:after{
     content: ".";
@@ -305,4 +319,9 @@ body > footer {
  .clearfix{ display: inline-block; }
 * html .clearfix{ height: 1%; }
 .clearfix { display: block; }
-    
+
+// for循环定义 padding 偏移值
+@for $i from 1 through 100 {
+    .padding-top-#{$i} { padding-top:(1px * $i); }
+    .padding-bottom-#{$i} { padding-bottom:(1px * $i); }
+}

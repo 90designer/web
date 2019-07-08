@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #slide-wrap {
   position: relative;
   overflow: hidden; }
@@ -94,3 +95,37 @@
     background-color: #01aab6;
     color: #fff;
     border-color: #01aab6; }
+
+/*朗朗公益*/
+.welfare header {
+  background-color: #efefef; }
+
+.welfare-wrap .row {
+  float: left;
+  width: 33.33333%; }
+.welfare-wrap .content-big {
+  height: 380px; }
+.welfare-wrap .content-small {
+  height: 190px; }
+.welfare-wrap .content-dec {
+  padding: 42px 48px 0 40px; }
+  .welfare-wrap .content-dec .title {
+    font-size: 24px; }
+  .welfare-wrap .content-dec time {
+    display: block;
+    padding: 14px 0 20px;
+    opacity: .5;
+    filter: alpha(opacity=50); }
+  .welfare-wrap .content-dec .line {
+    display: block;
+    width: 38px;
+    border-top: 1px solid #cccccc; }
+  .welfare-wrap .content-dec .dec {
+    margin-top: 33px;
+    line-height: 24px; }
+  .welfare-wrap .content-dec .link-more {
+    margin-top: 16px; }
+.welfare-wrap .color-white .title, .welfare-wrap .color-white time, .welfare-wrap .color-white .dec, .welfare-wrap .color-white .link-more {
+  color: #fff; }
+.welfare-wrap .color-white .link-more {
+  border-color: #fff; }
