@@ -19,6 +19,13 @@
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 
+// display
+.hide { display: none; }
+
+//position
+.p-r { position: relative; }
+.p-a { position: absolute; }
+
 //header
 .logo {
     margin-top: 30px;
@@ -307,6 +314,25 @@ body > footer {
         font-weight: 700;
     }
 }
+
+/* tab-menu */
+.tab-menu {
+    text-align: center;
+    a {
+        display: inline-block;
+        padding: 0 23px;
+        margin: 0 4px;
+        border: 1px solid #e2e2e2;
+        line-height: 32px;
+        &.current {
+            background-color: $text-gray;
+            border-color: $text-gray;
+            color: #fff;
+        }
+    }
+}
+
+
 
 // clearfix 清除浮动
 .clearfix:after{

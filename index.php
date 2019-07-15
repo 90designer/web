@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./js/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./font/iconfont/iconfont.css">
 </head>
@@ -133,24 +134,9 @@
     <!--幻灯片 end-->
     <div class="container">
         <!--朗朗口腔 start-->
-        <div class="main-column padding-top-90 padding-bottom-70">
-            <h3>朗朗口腔</h3>
-            <p>
-                呵护牙齿健康  创造美好未来
-                <span></span>
-                care for teeth to create a better future
-            </p>
-        </div>
-        <div class="info-list">
-            <div id="infowListWrap"></div>
-            <a href="" class="more-link">查看更多</a>
-        </div>
-        <!--朗朗口腔 end-->
-
-        <!--朗朗公益 start-->
-        <section class="welfare">
+        <section>
             <header>
-                <div class="main-column padding-top-53 padding-bottom-53">
+                <div class="main-column padding-top-90 padding-bottom-70">
                     <h3>朗朗口腔</h3>
                     <p>
                         呵护牙齿健康  创造美好未来
@@ -159,63 +145,179 @@
                     </p>
                 </div>
             </header>
-            <div class="welfare-wrap clearfix">
-                <div class="row">
-                    <div class="content-big">
-                        <img src="images/pic002.jpg" alt="爱能养老院活动">
+            <div class="info-list">
+                <div id="infowListWrap"></div>
+                <a href="" class="more-link">查看更多</a>
+            </div>
+        </section>
+        <!--朗朗口腔 end-->
+
+        <!--朗朗公益 start-->
+        <section class="welfare">
+            <header>
+                <div class="main-column padding-top-53 padding-bottom-53">
+                    <h3>朗朗公益</h3>
+                    <p>
+                        呵护牙齿健康  创造美好未来
+                        <span></span>
+                        care for teeth to create a better future
+                    </p>
+                </div>
+            </header>
+            <div class="welfare-wrap" id="welfareWrap"></div>
+        </section>
+        <!--朗朗公益 end-->
+    </div>
+    <!--医生模块 start-->
+    <section class="doctor">
+        <header class="hide">
+            <div>
+                <h3>朗朗医生</h3>
+                <p>
+                    呵护牙齿健康  创造美好未来
+                    <span></span>
+                    care for teeth to create a better future
+                </p>
+            </div>
+        </header>
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="doctor-slide-item clearfix doctor-info">
+                            <div class="img">
+                                <span class="name">方晓珍</span>
+                                <img src="images/pic005.jpg" alt="方晓珍">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">牙周主诊医师</h4>
+                                <span class="txt">擅长：仿真陶瓷牙修复、牙周系统治疗、残根残冠的保存治疗等。</span>
+                                <i class="line"></i>
+                                <p class="dec">国内知名大学口腔医学学士，曾就职于高端私人齿科工作室，从事口腔事业10余年，对口腔各类常见疾病的临床治疗积累了丰富经验。积极学习新技术的临床应用，不断进修提升，精通牙体保存治疗。数次参加北京医科大学牙周学习研究项目、香港大学牙周学习研究项目。技术上追求完美，坚持 “微创无痛治疗” 原则，深受患者的信赖！</p>
+                                <a href="" class="link-more">
+                                    查看更多
+                                    <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content-small" style="background-color: #eae9e4;">
-                        <div class="content-dec">
-                            <h4 class="title">爱能养老院活动</h4>
-                            <time datatime="2016-09-17" pubdate="2016-09-17 12:00:00">2016-09-17</time>
-                            <i class="line"></i>
-                            <a href="" class="link-more">
-                                查看更多
-                                <i class="iconfont icon-jiantou_xiangyou_o"></i>
-                            </a>
+                    <div class="swiper-slide">
+                        <div class="doctor-slide-item clearfix doctor-info">
+                            <div class="img">
+                                <span class="name">方晓珍</span>
+                                <img src="images/pic005.jpg" alt="方晓珍">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">牙周主诊医师</h4>
+                                <span class="txt">擅长：仿真陶瓷牙修复、牙周系统治疗、残根残冠的保存治疗等。</span>
+                                <i class="line"></i>
+                                <p class="dec">国内知名大学口腔医学学士，曾就职于高端私人齿科工作室，从事口腔事业10余年，对口腔各类常见疾病的临床治疗积累了丰富经验。积极学习新技术的临床应用，不断进修提升，精通牙体保存治疗。数次参加北京医科大学牙周学习研究项目、香港大学牙周学习研究项目。技术上追求完美，坚持 “微创无痛治疗” 原则，深受患者的信赖！</p>
+                                <a href="" class="link-more">
+                                    查看更多
+                                    <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="doctor-slide-item clearfix doctor-info">
+                            <div class="img">
+                                <span class="name">方晓珍</span>
+                                <img src="images/pic005.jpg" alt="方晓珍">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">牙周主诊医师</h4>
+                                <span class="txt">擅长：仿真陶瓷牙修复、牙周系统治疗、残根残冠的保存治疗等。</span>
+                                <i class="line"></i>
+                                <p class="dec">国内知名大学口腔医学学士，曾就职于高端私人齿科工作室，从事口腔事业10余年，对口腔各类常见疾病的临床治疗积累了丰富经验。积极学习新技术的临床应用，不断进修提升，精通牙体保存治疗。数次参加北京医科大学牙周学习研究项目、香港大学牙周学习研究项目。技术上追求完美，坚持 “微创无痛治疗” 原则，深受患者的信赖！</p>
+                                <a href="" class="link-more">
+                                    查看更多
+                                    <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="content-big" style="background-color: #ffffff;">
-                        <div class="content-dec">
-                            <h4 class="title">美吉姆早教义诊活动</h4>
-                            <time datatime="2016-09-17" pubdate="2016-09-17 12:00:00">2016-09-17</time>
-                            <i class="line"></i>
-                            <p class="dec">在“牙齿健康从娃娃抓起”大型美吉姆公益义诊活动现场，参与活动的朗朗口腔辽宁分公司儿童口腔专家王阳有着丰富的临床治疗经验，包括儿童龋病、儿童口腔外科、儿童错颌畸形早期矫治等，囊括了儿童口腔健康的各个方面。王医生现场对孩子们进行了细致的口腔检查</p>
-                            <a href="" class="link-more">
-                                查看更多
-                                <i class="iconfont icon-jiantou_xiangyou_o"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="content-small">
-                        <img src="images/pic003.jpg" alt="美吉姆早教义诊活动">
-                    </div>
+                <!-- Add Pagination -->
+                
+                <!-- Add Arrows -->
+                <!-- <div class="swiper-button-next"></div> -->
+                <!-- <div class="swiper-button-prev"></div> -->
+            </div>
+            <div class="p-r"><div class="swiper-pagination doctor-swiper-pagination"></div></div>
+        </div>
+    </section>
+    <!--医生模块 end-->
+
+    <!--资讯动态 start-->
+    <div class="container">
+        <section>
+            <header>
+                <div class="main-column padding-top-90 padding-bottom-40">
+                    <h3>资讯动态</h3>
+                    <p>
+                        呵护牙齿健康  创造美好未来
+                        <span></span>
+                        care for teeth to create a better future
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="content-small">
-                        <img src="images/pic004.jpg" alt="商业城公益捐赠活动">
+            </header>
+            <ul class="tab-menu">
+                <a href="" title="行业动态" class="current">行业动态</a><a href="" title="朗朗资讯">朗朗资讯</a><a href="" title="媒体报道">媒体报道</a><a href="" title="公益活动">公益活动</a>
+            </ul>
+            <div class="news-wrap">
+                <div class="box">
+                    <div class="item">
+                        <img src="images/pic006.jpg" alt="朗朗口腔“合赢未来，与资本共">
+                        <h4 class="title">朗朗口腔“合赢未来，与资本共</h4>
+                        <time datatime="2016-09-27 12:00:00" pubtime="2016-09-27">2016-09-27</time>
+                        <i class="line"></i>
+                        <p class="dec">朗朗口腔“合赢未来，与资本共舞”口腔行业峰会继山东青岛第一站后，即将迎来第二站：福建厦门站...</p>
+                        <a href="" class="link-more">
+                            查看更多
+                            <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                        </a>
                     </div>
-                    <div class="content-big color-white" style="background-color: #e03854;">
-                        <div class="content-dec">
-                            <h4 class="title">商业城公益捐赠活动</h4>
-                            <time datatime="2016-09-17" pubdate="2016-09-17 12:00:00">2016-09-17</time>
-                            <i class="line"></i>
-                            <p class="dec">朗朗口腔辽宁分公司于2016年9月17日在沈阳核心商圈中街商业城举办公益助残捐赠活动，本次共计为辽宁省残疾人福利基金会捐助善款184500元，朗朗口腔辽宁分公司CEO张显威、总经理杜忠华、原省委宣传部副部长葛本亮、辽宁省残联秘书长胡雅菊、商业城总经理刘丽</p>
-                            <a href="" class="link-more">
-                                查看更多
-                                <i class="iconfont icon-jiantou_xiangyou_o"></i>
-                            </a>
-                        </div>
+                    <div class="item">
+                        <img src="images/pic007.jpg" alt="朗朗口腔“合赢未来，与资本共">
+                        <h4 class="title">朗朗口腔“合赢未来，与资本共</h4>
+                        <time datatime="2016-09-27 12:00:00" pubtime="2016-09-27">2016-09-27</time>
+                        <i class="line"></i>
+                        <p class="dec">朗朗口腔“合赢未来，与资本共舞”口腔行业峰会继山东青岛第一站后，即将迎来第二站：福建厦门站...</p>
+                        <a href="" class="link-more">
+                            查看更多
+                            <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img src="images/pic008.jpg" alt="朗朗口腔“合赢未来，与资本共">
+                        <h4 class="title">朗朗口腔“合赢未来，与资本共</h4>
+                        <time datatime="2016-09-27 12:00:00" pubtime="2016-09-27">2016-09-27</time>
+                        <i class="line"></i>
+                        <p class="dec">朗朗口腔“合赢未来，与资本共舞”口腔行业峰会继山东青岛第一站后，即将迎来第二站：福建厦门站...</p>
+                        <a href="" class="link-more">
+                            查看更多
+                            <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img src="images/pic009.jpg" alt="朗朗口腔“合赢未来，与资本共">
+                        <h4 class="title">朗朗口腔“合赢未来，与资本共</h4>
+                        <time datatime="2016-09-27 12:00:00" pubtime="2016-09-27">2016-09-27</time>
+                        <i class="line"></i>
+                        <p class="dec">朗朗口腔“合赢未来，与资本共舞”口腔行业峰会继山东青岛第一站后，即将迎来第二站：福建厦门站...</p>
+                        <a href="" class="link-more">
+                            查看更多
+                            <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!--朗朗公益 end-->
-
-        
     </div>
+    <!--资讯动态 end-->
+
+
     <footer>
         <div class="container">
             <div class="clearfix">
@@ -290,11 +392,13 @@
         </div>
     </footer>
     <script src="js/jquery.min.js"></script>
+    <script src="js/swiper/js/swiper.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/doctorSwiper.js"></script>
     <script>
         loadingMsg({
-            wrap: 'infowListWrap',
+            id: 'infowListWrap',
             message: '加载中'
         })
         $.ajax({
@@ -331,6 +435,74 @@
                 ul += '</ul>'
                 // 请求成功后，处理视图DOM渲染
                 infoListWrap.innerHTML = ul
+            },
+            complete: function() {},
+            error: function() {
+                //请求出错处理
+            }
+        });
+
+        $.ajax({
+            url: "./data/index.php",    //请求的url地址
+            dataType: "json",   //返回格式为json
+            async: false, //请求是否异步，默认为异步，这也是ajax重要特性
+            cache: false, // 是否读取缓存
+            data: {
+                module: 'welfare',
+                categoryId: 10000
+            },    //参数值
+            type: "POST",   //GET\POST
+            beforeSend: function() {},
+            success: function(req) {//请求成功时处理
+                let data = req.data
+                let html = ''
+                let welfareWrap = document.getElementById('welfareWrap');
+                // 处理第一个
+                html += `<div class="row">
+                    <div class="content-flex">
+                        <div class="content-flex-big">
+                            <img src="${data[0].imgUrl}" alt="${data[0].title}">
+                        </div>
+                        <div class="content-flex-small" style="background-color: #${data[0].bgColor};">
+                            <div class="content-dec">
+                                <h4 class="title">${data[0].title}</h4>
+                                <time datatime="${data[0].date}" pubdate="${data[0].date}">${data[0].date}</time>
+                                <i class="line"></i>
+                                <a href="" class="link-more">
+                                    查看更多
+                                    <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
+                
+                req.data.forEach((item, index) => {
+                    if(index != 0) {
+                        html += `
+                        <div class="row">
+                            <div class="content-flex">
+                                <div class="content-flex-big ${item.color}" style="background-color: #${item.bgColor};">
+                                    <div class="content-dec">
+                                        <h4 class="title">${item.title}</h4>
+                                        <time datatime="${item.date}" pubdate="${item.date}">${item.date}</time>
+                                        <i class="line"></i>
+                                        <p class="dec">${item.dec}</p>
+                                        <a href="" class="link-more">
+                                            查看更多
+                                            <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content-flex-small">
+                                    <img src="${item.imgUrl}" alt="${item.title}">
+                                </div>
+                            </div>
+                        </div>`
+                    }
+                })
+                welfareWrap.innerHTML = html
+                
             },
             complete: function() {},
             error: function() {

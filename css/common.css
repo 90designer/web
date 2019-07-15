@@ -27,6 +27,15 @@
 .text-center {
   text-align: center; }
 
+.hide {
+  display: none; }
+
+.p-r {
+  position: relative; }
+
+.p-a {
+  position: absolute; }
+
 .logo {
   margin-top: 30px;
   margin-bottom: 30px; }
@@ -290,6 +299,20 @@ body > footer {
     position: relative;
     top: 2px;
     font-weight: 700; }
+
+/* tab-menu */
+.tab-menu {
+  text-align: center; }
+  .tab-menu a {
+    display: inline-block;
+    padding: 0 23px;
+    margin: 0 4px;
+    border: 1px solid #e2e2e2;
+    line-height: 32px; }
+    .tab-menu a.current {
+      background-color: #a0a0a0;
+      border-color: #a0a0a0;
+      color: #fff; }
 
 .clearfix:after {
   content: ".";
