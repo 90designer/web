@@ -262,57 +262,19 @@
                     </p>
                 </div>
             </header>
-            <ul class="tab-menu">
-                <a href="" title="行业动态" class="current">行业动态</a><a href="" title="朗朗资讯">朗朗资讯</a><a href="" title="媒体报道">媒体报道</a><a href="" title="公益活动">公益活动</a>
-            </ul>
-            <div class="news-wrap">
-                <div class="box">
-                    <div class="item">
-                        <img src="images/pic006.jpg" alt="朗朗口腔“合赢未来，与资本共">
-                        <h4 class="title">朗朗口腔“合赢未来，与资本共</h4>
-                        <time datatime="2016-09-27 12:00:00" pubtime="2016-09-27">2016-09-27</time>
-                        <i class="line"></i>
-                        <p class="dec">朗朗口腔“合赢未来，与资本共舞”口腔行业峰会继山东青岛第一站后，即将迎来第二站：福建厦门站...</p>
-                        <a href="" class="link-more">
-                            查看更多
-                            <i class="iconfont icon-jiantou_xiangyou_o"></i>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <img src="images/pic007.jpg" alt="朗朗口腔“合赢未来，与资本共">
-                        <h4 class="title">朗朗口腔“合赢未来，与资本共</h4>
-                        <time datatime="2016-09-27 12:00:00" pubtime="2016-09-27">2016-09-27</time>
-                        <i class="line"></i>
-                        <p class="dec">朗朗口腔“合赢未来，与资本共舞”口腔行业峰会继山东青岛第一站后，即将迎来第二站：福建厦门站...</p>
-                        <a href="" class="link-more">
-                            查看更多
-                            <i class="iconfont icon-jiantou_xiangyou_o"></i>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <img src="images/pic008.jpg" alt="朗朗口腔“合赢未来，与资本共">
-                        <h4 class="title">朗朗口腔“合赢未来，与资本共</h4>
-                        <time datatime="2016-09-27 12:00:00" pubtime="2016-09-27">2016-09-27</time>
-                        <i class="line"></i>
-                        <p class="dec">朗朗口腔“合赢未来，与资本共舞”口腔行业峰会继山东青岛第一站后，即将迎来第二站：福建厦门站...</p>
-                        <a href="" class="link-more">
-                            查看更多
-                            <i class="iconfont icon-jiantou_xiangyou_o"></i>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <img src="images/pic009.jpg" alt="朗朗口腔“合赢未来，与资本共">
-                        <h4 class="title">朗朗口腔“合赢未来，与资本共</h4>
-                        <time datatime="2016-09-27 12:00:00" pubtime="2016-09-27">2016-09-27</time>
-                        <i class="line"></i>
-                        <p class="dec">朗朗口腔“合赢未来，与资本共舞”口腔行业峰会继山东青岛第一站后，即将迎来第二站：福建厦门站...</p>
-                        <a href="" class="link-more">
-                            查看更多
-                            <i class="iconfont icon-jiantou_xiangyou_o"></i>
-                        </a>
-                    </div>
-                </div>
+            <ul class="tab-menu"></ul>
+            <!--行业动态-->
+            <div id="tab-content-wrap">
+                <div id="industry">11</div>
+                <!--朗朗资讯-->
+                <div id="information" style="display: none;"></div>
+                <!--媒体报道-->
+                <div id="media" style="display: none;"></div>
+                <!--公益活动-->
+                <div id="welfare" style="display: none;"></div>
             </div>
+
+            
         </section>
     </div>
     <!--资讯动态 end-->
@@ -395,6 +357,7 @@
     <script src="js/swiper/js/swiper.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/indexNewsAjax.js"></script>
     <script src="js/doctorSwiper.js"></script>
     <script>
         loadingMsg({

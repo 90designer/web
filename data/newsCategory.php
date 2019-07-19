@@ -1,4 +1,5 @@
 <?php
+$dataItem = null;
 $dataItem = array(
     array(
         'id' => 1,

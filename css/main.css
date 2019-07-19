@@ -207,12 +207,17 @@
   padding-bottom: 102px;
   overflow: hidden; }
   .news-wrap .box {
-    display: flex;
     margin-left: -15px;
     margin-right: -15px; }
   .news-wrap .item {
-    flex: 1;
-    padding: 0 15px; }
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
   .news-wrap img {
     width: 100%;
     display: block; }
