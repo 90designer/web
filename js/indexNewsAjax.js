@@ -45,9 +45,7 @@ function loadNewsData(params){
     tabContentWrap[params.index].style.display = 'block'
     // 分类高光
     // 清除所有的高光
-    for(let i = 0; i < aItem.length; i++){
-        aItem[i].className = ''
-    }
+    for(let i = 0; i < aItem.length; i++){ aItem[i].className = '' }
     // 当前栏目高光
     params._this.className = 'current';
     // 请求数据
