@@ -264,17 +264,7 @@
             </header>
             <ul class="tab-menu"></ul>
             <!--行业动态-->
-            <div id="tab-content-wrap">
-                <div id="industry">11</div>
-                <!--朗朗资讯-->
-                <div id="information" style="display: none;"></div>
-                <!--媒体报道-->
-                <div id="media" style="display: none;"></div>
-                <!--公益活动-->
-                <div id="welfare" style="display: none;"></div>
-            </div>
-
-            
+            <div id="tab-content-wrap"></div>
         </section>
     </div>
     <!--资讯动态 end-->

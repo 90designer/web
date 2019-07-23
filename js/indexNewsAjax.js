@@ -1,4 +1,5 @@
-
+// 储存数据
+let dataItem = {}
 $.ajax({
     url: "./data/newsCategory.php",    //请求的url地址
     dataType: "json",   //返回格式为json
@@ -19,7 +20,7 @@ $.ajax({
         data.forEach((item, index) => {
             let className = ''
             if(index === 0) { className = 'current'; }
-            menuHtml += `<a data-request="false" href="javascript: void(0);" onclick="loadNewsData({_this: this, id: ${item.id}, index: ${index}})" class="${className}" title="${item.categoryName}">${item.categoryName}</a>`
+            menuHtml += `<a data-type="${item.type}" href="javascript: void(0);" onclick="loadNewsData({_this: this, id: ${item.id}, index: ${index}})" class="${className}" title="${item.categoryName}">${item.categoryName}</a>`
         })
         // 菜单
         tagMenu.innerHTML = menuHtml
@@ -33,25 +34,23 @@ $.ajax({
 
 function loadNewsData(params){
     // 获取request标识，判断是否已请求成功数据，true为请求成功，false未请求
-    let getRequest = params._this.getAttribute('data-request')
+    let categoryType = params._this.getAttribute('data-type')
     // 获取内容区域
-    let tabContentWrap = document.getElementById('tab-content-wrap').children;
+    let tabContentWrap = document.getElementById('tab-content-wrap');
     // 获取分类菜单
     let aItem = document.getElementsByClassName('tab-menu')[0].children;
-    // 显示指定的内容区域
-    for(let i = 0; i < tabContentWrap.length; i++){
-        tabContentWrap[i].style.display = 'none'
-    }
-    tabContentWrap[params.index].style.display = 'block'
     // 分类高光
     // 清除所有的高光
-    for(let i = 0; i < aItem.length; i++){
-        aItem[i].className = ''
-    }
+    for(let i = 0; i < aItem.length; i++){ aItem[i].className = '' }
     // 当前栏目高光
     params._this.className = 'current';
-    // 请求数据
-    if(getRequest === 'true') { return false }
+    // 获取储存的数据
+    let data = dataItem[categoryType]
+    undefined == false
+    if(data) {
+        tabContent(data, tabContentWrap)
+        return false
+    }
     $.ajax({
         url: "./data/indexNews.php",    //请求的url地址
         dataType: "json",   //返回格式为json
@@ -65,28 +64,32 @@ function loadNewsData(params){
         type: "POST",   //GET\POST
         success: function(req) {//请求成功时处理
             let data = req.data
-            let itemHtml = `<div class="news-wrap"><div class="box clearfix">`
-            data.forEach(item => {
-                let time = item.time.split(' ');
-                itemHtml += `<div class="item">
-                                <img src="${item.imgUrl}" alt="${item.title}">
-                                <h4 class="title">${item.title}</h4>
-                                <time datatime="${item.time}" pubtime="${time[0]}">${time[0]}</time>
-                                <i class="line"></i>
-                                <p class="dec">${item.dec}</p>
-                                <a href="" class="link-more">
-                                    查看更多
-                                    <i class="iconfont icon-jiantou_xiangyou_o"></i>
-                                </a>
-                            </div>`
-            })
-            itemHtml += `</div></div>`
-            tabContentWrap[params.index].innerHTML = itemHtml
-            //请求成功修改标识
-            params._this.setAttribute('data-request', 'true')
+            tabContent(data, tabContentWrap)
+            // 储存数据
+            dataItem[categoryType] = req.data
         },
         error: function(res) {
             //请求出错处理
         }
     });
+}
+
+function tabContent(data, content){
+    let itemHtml = `<div class="news-wrap"><div class="box clearfix">`
+    data.forEach(item => {
+        let time = item.time.split(' ');
+        itemHtml += `<div class="item">
+                        <img src="${item.imgUrl}" alt="${item.title}">
+                        <h4 class="title">${item.title}</h4>
+                        <time datatime="${item.time}" pubtime="${time[0]}">${time[0]}</time>
+                        <i class="line"></i>
+                        <p class="dec">${item.dec}</p>
+                        <a href="" class="link-more">
+                            查看更多
+                            <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                        </a>
+                    </div>`
+    })
+    itemHtml += `</div></div>`
+    content.innerHTML = itemHtml
 }
