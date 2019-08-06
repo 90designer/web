@@ -54,5 +54,6 @@ li {
     padding-top: 10px;
     height: 70px;
     border-bottom: 1px solid #efefef;
+    line-height: 20px;
 }
 .basic1 * { border: 1px solid red; }
