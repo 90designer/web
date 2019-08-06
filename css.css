@@ -23,6 +23,11 @@ section {
     margin-left: 250px;
     padding: 50px;
 }
+iframe{
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
 .demo {
     height: 55px;
 }
@@ -52,8 +57,6 @@ li {
 .content {
     margin-bottom: 50px;
     padding-top: 10px;
-    height: 70px;
-    border-bottom: 1px solid #efefef;
     line-height: 20px;
 }
 .basic1 * { border: 1px solid red; }
