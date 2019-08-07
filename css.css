@@ -7,6 +7,7 @@ aside {
     top: 0;
     left: 0;
     background-color: #f1f1f1;
+    overflow-y: auto;
 }
 aside dt {
     padding: 15px;
