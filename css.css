@@ -38,7 +38,8 @@ xmp {
 .demo {
     height: 55px;
 }
-li {
+li,
+.demo a {
     float: left;
     width: 40px;
     height: 40px;
