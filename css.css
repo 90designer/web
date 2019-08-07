@@ -28,6 +28,10 @@ iframe{
     padding-bottom: 50px;
     margin-bottom: 50px;
 }
+section iframe:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
 xmp {
     border-radius: 8px;
     background-color: #ccc;
