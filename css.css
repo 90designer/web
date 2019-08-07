@@ -28,6 +28,13 @@ iframe{
     padding-bottom: 50px;
     margin-bottom: 50px;
 }
+xmp {
+    border-radius: 8px;
+    background-color: #ccc;
+    line-height: 20px;
+    margin-top: 15px;
+    font-size:14px;
+}
 .demo {
     height: 55px;
 }
