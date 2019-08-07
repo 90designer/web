@@ -15,6 +15,15 @@
 </head>
 <body>
     <h4 class="title">:nth-child() 选择某个的一个或多个特定的子元素</h4>
+    <div class="content">
+        1、:nth-child(number);/*参数是具体数字*/ <br />
+        2、:nth-child(n);/*参数是n,n从0开始计算*/ <br />
+        3、:nth-child(n*length)/*n的倍数选择，n从0开始算*/ <br />
+        4、:nth-child(n+length);/*选择大于length后面的元素*/ <br />
+        5、:nth-child(-n+length)/*选择小于length前面的元素*/ <br />
+        6、:nth-child(n*length+1);/*表示隔几选一*/ <br /><br />
+        :nth-child()可以定义他的值（值可以是整数，也可以是表达式）
+    </div>
     <ul class="demo demo1">
         <li>1</li>
         <li>2</li>
@@ -28,15 +37,25 @@
         <li>10</li>
     </ul>
     <div class="content">
-        1、:nth-child(number);/*参数是具体数字*/ <br />
-        2、:nth-child(n);/*参数是n,n从0开始计算*/ <br />
-        3、:nth-child(n*length)/*n的倍数选择，n从0开始算*/ <br />
-        4、:nth-child(n+length);/*选择大于length后面的元素*/ <br />
-        5、:nth-child(-n+length)/*选择小于length前面的元素*/ <br />
-        6、:nth-child(n*length+1);/*表示隔几选一*/ <br /><br />
-        :nth-child()可以定义他的值（值可以是整数，也可以是表达式）<br />
-        .demo1 li:nth-child(3) { background: red; border: 1px solid yellow; color: #fff; }<br />
+        .demo li:nth-child(3) { background: red; border: 1px solid yellow; color: #fff; }<br />
         选择某元素下的第三个子元素。
+    </div>
+    
+    <ul class="demo demo2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <div class="content">
+        .demo li:nth-child(n) { background: red; border: 1px solid yellow; color: #fff; } 等于.demo li {background: lime;}<br />
+        n是一个简单的表达式，那么"n"取值是从“0”开始计算。
     </div>
 </body>
 </html>
