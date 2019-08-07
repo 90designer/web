@@ -76,6 +76,14 @@
         <iframe src="nth11.html" frameborder="0" width="100%" height="255" scrolling="no"></iframe>
         <iframe src="nth12.html" frameborder="0" width="100%" height="255" scrolling="no"></iframe>
     </section>
+    <script>
+        let iframe = document.getElementsByTagName('iframe');
+        iframe.forEach(item => {
+            item.onload = () => {
+                item.style.height = item.contentDocument.body.scrollHeight + 'px'
+            };
+        })
+    </script>
     
 </body>
 </html>
