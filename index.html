@@ -78,6 +78,7 @@
     </section>
     <script>
         let iframe = document.getElementsByTagName('iframe');
+        console.log(iframe)
         iframe.forEach(item => {
             item.onload = () => {
                 item.style.height = item.contentDocument.body.scrollHeight + 'px'
