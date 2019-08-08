@@ -63,20 +63,24 @@ function loadNewsData(params){
         type: "POST",   //GET\POST
         success: function(req) {//请求成功时处理
             let data = req.data
-            let itemHtml = `<div class="news-wrap"><div class="box clearfix">`
+            let itemHtml = `<div class="row-container gutter-15 index-news-list padding-top-73 padding-bottom-102"><div class="row-wrap">`
             data.forEach(item => {
                 let time = item.time.split(' ');
-                itemHtml += `<div class="item">
-                                <img src="${item.imgUrl}" alt="${item.title}">
-                                <h4 class="title">${item.title}</h4>
-                                <time datatime="${item.time}" pubtime="${time[0]}">${time[0]}</time>
-                                <i class="line"></i>
-                                <p class="dec">${item.dec}</p>
-                                <a href="" class="link-more">
-                                    查看更多
-                                    <i class="iconfont icon-jiantou_xiangyou_o"></i>
-                                </a>
-                            </div>`
+                itemHtml += `<div class="col-item-3"><div class="item">
+                                <div class="img-cover" style="background-image: url(${item.imgUrl})">
+                                    <img src="images/blank/indexNews.png" alt="${item.title}" width="100%">
+                                </div>
+                                <div class="figure-content padding-top-24">
+                                    <h4 class="title">${item.title}</h4>
+                                    <time datatime="${item.time}" pubtime="${time[0]}">${time[0]}</time>
+                                    <i class="line"></i>
+                                    <p class="dec">${item.dec}</p>
+                                    <a href="" class="link-more">
+                                        查看更多
+                                        <i class="iconfont icon-jiantou_xiangyou_o"></i>
+                                    </a>
+                                </div>
+                            </div></div>`
             })
             itemHtml += `</div></div>`
             tabContentWrap[params.index].innerHTML = itemHtml

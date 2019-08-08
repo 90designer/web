@@ -126,6 +126,7 @@ nav {
         ul {
             display: none;
             position: absolute;
+            z-index: 100;
             a {
                 height: 41px;
                 color: #000;
@@ -332,7 +333,110 @@ body > footer {
     }
 }
 
+/*面包屑*/
+.crumbs {
+    padding: 84px 0;
+    background: url(../images/img.jpg) no-repeat center;
+    color: #fff;
+    .column-name {
+        margin-bottom: 13px;
+        font-size: 30px;
+    }
+    span { padding:0 5px; }
+    a { color: #fff; }
+}
+.category-menu {
+    border-bottom: 1px solid #f1f1f1;
+    li { 
+        float: left;
+        margin-right: 18px;
+    }
+    a {
+        display: block;
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 49px;
+        margin-bottom: -1px;
+        &.current {
+            color: $color-main;
+            border-bottom: 1px solid $color-main;
+        }
+    }
+}
 
+/*占位图显示*/
+.img-cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*自动分列*/
+.row-container {
+    overflow: hidden;
+    .row-wrap { @extend %clearfix; }
+    div[class^=col-item] {
+        float: left;
+        @include webkit(box-sizing, border-box);
+    }
+    &.gutter-15 {
+        div[class^=col-item] { padding: 0 15px; }
+        .row-wrap { margin: 0 -15px; }
+    }
+    .col-item-3 { width: 25%; }
+    .col-item-4 { width: 33.33333%; }
+    .col-item-6 { width: 50%; }
+}
+/* 图文内容样式 */
+/*news-wrap*/
+.figure-content {
+    .title {
+        font-size: 18px;
+        @include ell(1);
+    }
+    time {
+        display: block;
+        padding: 11px 0 13px;
+        color: $text-gray;
+    }
+    .line {
+        display: block;
+        width: 50px;
+        border-top: 1px solid #d9d9d9;
+    }
+    .dec {
+        padding-top: 15px;
+        margin-bottom: 22px;
+        line-height: 22px;
+        color: $text-gray;
+        @include ell(2);
+    }
+    .link-more {
+        opacity: .4;
+        filter: alpha(opacity = 40);
+    }
+}
+
+/* 页码 pagination*/
+.pagination {
+    margin-bottom: 120px;
+    text-align: center;
+    span, a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin: 0 7px;
+        background-color: #f5f5f5;
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px;
+        color: #a0a0a0;
+    }
+    span {
+        background-color: $color-main;
+        color: #fff;
+    }
+}
 
 // clearfix 清除浮动
 .clearfix:after{
@@ -347,7 +451,7 @@ body > footer {
 .clearfix { display: block; }
 
 // for循环定义 padding 偏移值
-@for $i from 1 through 100 {
+@for $i from 1 through 110 {
     .padding-top-#{$i} { padding-top:(1px * $i); }
     .padding-bottom-#{$i} { padding-bottom:(1px * $i); }
 }

@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.info-list ul {
+  height: 1%; }
+  .info-list ul:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
 #slide-wrap {
   position: relative;
   overflow: hidden; }
@@ -201,42 +210,35 @@
   color: #010101;
   font-weight: bold; }
 
-/*news-wrap*/
-.news-wrap {
-  padding-top: 73px;
-  padding-bottom: 102px;
+/* news.php */
+.news-list .item {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #f1f1f1; }
+
+/* 合作伙伴 */
+.partner-lsit .item {
+  padding: 0 20px 80px;
+  opacity: .6;
+  filter: alpha(opacity=60);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  .partner-lsit .item:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+.partner-lsit .img {
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.2); }
+.partner-lsit img {
+  border-radius: 8px; }
+.partner-lsit figcaption {
+  padding-top: 33px;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   overflow: hidden; }
-  .news-wrap .box {
-    margin-left: -15px;
-    margin-right: -15px; }
-  .news-wrap .item {
-    float: left;
-    width: 25%;
-    padding: 0 15px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box; }
-  .news-wrap img {
-    width: 100%;
-    display: block; }
-  .news-wrap .title {
-    padding-top: 25px;
-    font-size: 18px; }
-  .news-wrap time {
-    display: block;
-    padding: 11px 0 13px;
-    color: #a0a0a0; }
-  .news-wrap .line {
-    display: block;
-    width: 50px;
-    border-top: 1px solid #d9d9d9; }
-  .news-wrap .dec {
-    padding-top: 15px;
-    padding-bottom: 22px;
-    line-height: 22px;
-    color: #a0a0a0; }
-  .news-wrap .link-more {
-    opacity: .4;
-    filter: alpha(opacity=40); }
