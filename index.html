@@ -51,48 +51,58 @@
     </aside>
     <section>
         <header class="column">基础选择器</header>
-        <iframe src="basic1.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic2.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic3.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic4.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic5.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic6.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic7.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic8.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic9.html" frameborder="0" width="100%" scrolling="no"></iframe>
+        <iframe src="./basic1.html" frameborder="0" width="100%" style="height:415px;" scrolling="no"></iframe>
+        <iframe src="./basic2.html" frameborder="0" width="100%" style="height:435px;" scrolling="no"></iframe>
+        <iframe src="./basic3.html" frameborder="0" width="100%" style="height:435px;" scrolling="no"></iframe>
+        <iframe src="./basic4.html" frameborder="0" width="100%" style="height:435px;" scrolling="no"></iframe>
+        <iframe src="./basic5.html" frameborder="0" width="100%" style="height:435px;" scrolling="no"></iframe>
+        <iframe src="./basic6.html" frameborder="0" width="100%" style="height:435px;" scrolling="no"></iframe>
+        <iframe src="./basic7.html" frameborder="0" width="100%" style="height:475px;" scrolling="no"></iframe>
+        <iframe src="./basic8.html" frameborder="0" width="100%" style="height:455px;" scrolling="no"></iframe>
+        <iframe src="./basic9.html" frameborder="0" width="100%" style="height:455px;" scrolling="no"></iframe>
     </section>
     <section>
         <header class="column">属性选择器</header>
-        <iframe src="type1.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type2.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type3.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type4.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type5.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type6.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type7.html" frameborder="0" width="100%" scrolling="no"></iframe>
+        <iframe src="./type1.html" frameborder="0" width="100%" style="height:435px;" scrolling="no"></iframe>
+        <iframe src="./type2.html" frameborder="0" width="100%" style="height:435px;" scrolling="no"></iframe>
+        <iframe src="./type3.html" frameborder="0" width="100%" style="height:475px;" scrolling="no"></iframe>
+        <iframe src="./type4.html" frameborder="0" width="100%" style="height:455px;" scrolling="no"></iframe>
+        <iframe src="./type5.html" frameborder="0" width="100%" style="height:435px;" scrolling="no"></iframe>
+        <iframe src="./type6.html" frameborder="0" width="100%" style="height:455px;" scrolling="no"></iframe>
+        <iframe src="./type7.html" frameborder="0" width="100%" style="height:435px;" scrolling="no"></iframe>
     </section>
     <section>
         <header class="column">伪类选择器</header>
-        <iframe src="nth1.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth2.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth3.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth4.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth5.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth6.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth7.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth8.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth9.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth10.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth11.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth12.html" frameborder="0" width="100%" scrolling="no"></iframe>
+        <iframe src="./nth1.html" frameborder="0" width="100%" style="height:140px;" scrolling="no"></iframe>
+        <iframe src="./nth2.html" frameborder="0" width="100%" style="height:140px;" scrolling="no"></iframe>
+        <iframe src="./nth3.html" frameborder="0" width="100%" style="height:1975px;" scrolling="no"></iframe>
+        <iframe src="./nth4.html" frameborder="0" width="100%" style="height:725px;" scrolling="no"></iframe>
+        <iframe src="./nth5.html" frameborder="0" width="100%" style="height:295px;" scrolling="no"></iframe>
+        <iframe src="./nth6.html" frameborder="0" width="100%" style="height:415px;" scrolling="no"></iframe>
+        <iframe src="./nth7.html" frameborder="0" width="100%" style="height:415px;" scrolling="no"></iframe>
+        <iframe src="./nth8.html" frameborder="0" width="100%" style="height:415px;" scrolling="no"></iframe>
+        <iframe src="./nth9.html" frameborder="0" width="100%" style="height:415px;" scrolling="no"></iframe>
+        <iframe src="./nth10.html" frameborder="0" width="100%" style="height:415px;" scrolling="no"></iframe>
+        <iframe src="./nth11.html" frameborder="0" width="100%" style="height:415px;" scrolling="no"></iframe>
+        <iframe src="./nth12.html" frameborder="0" width="100%" style="height:415px;" scrolling="no"></iframe>
     </section>
     <script>
-        let iframe = document.getElementsByTagName('iframe');
-        for(let i = 0; i < iframe.length; i++){
-            iframe[i].onload = function(){
-                iframe[i].style.height = iframe[i].contentDocument.body.scrollHeight + 'px'
-            }
+        window.onload = function(){
+            console.log(111)
+            let iframe = document.getElementsByTagName('iframe');
+            for(let i = 0; i < iframe.length; i++){
+                if (iframe[i].attachEvent) {
+                    iframe[i].attachEvent("onload", function () {
+                        console.log(iframe[i].contentWindow.document.body.innerHTML);
+                    });
+                } else {
+                    iframe[i].onload = function () {
+                        console.log(iframe[i].contentWindow.document.body.innerHTML);
+                    };
+                }
+            }  
         }
+       
     </script>
     
 </body>
