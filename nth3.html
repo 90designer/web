@@ -12,6 +12,7 @@
     <style>
         .demo1 li:nth-child(3) { background: red; border: 1px solid yellow; color: #fff; }
         .demo2 li:nth-child(n) { background: red; border: 1px solid yellow; color: #fff; }
+        .demo3 li:nth-child(2n) { background: red; border: 1px solid yellow; color: #fff; }
     </style>
 </head>
 <body>
@@ -58,6 +59,30 @@
     <div class="content">
         .demo li:nth-child(n) { background: red; border: 1px solid yellow; color: #fff; } 等于.demo li {background: lime;}<br />
         n是一个简单的表达式，那么"n"取值是从“0”开始计算。
+    </div>
+    <br /><br /><br />
+    
+    <ul class="demo demo3">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <div class="content">
+        .demo li:nth-child(2n) { background: red; border: 1px solid yellow; color: #fff; } 等于.demo li:nth-child(2n) {background: lime;} 等于.demo li:nth-child(even) {}<br />
+        n是一个简单的表达式，那么"n"取值是从“0”开始计算。<br />
+        表达示结果，如下:<br />
+        .demo li:nth-child(2n) = (2*0) = 0<br />
+        .demo li:nth-child(2n) = (2*1) = 2<br />
+        .demo li:nth-child(2n) = (2*2) = 4<br />
+        .demo li:nth-child(2n) = (2*3) = 6<br />
+        以此类推....
     </div>
 </body>
 </html>
