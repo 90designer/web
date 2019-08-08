@@ -15,6 +15,7 @@
         .demo3 li:nth-child(2n) { background: red; border: 1px solid yellow; color: #fff; }
         .demo4 li:nth-child(2n-1) { background: red; border: 1px solid yellow; color: #fff; }
         .demo5 li:nth-child(n+5){ background: red; border: 1px solid yellow; color: #fff; }
+        .demo6 li:nth-child(-n+5){ background: red; border: 1px solid yellow; color: #fff; }
     </style>
 </head>
 <body>
@@ -135,6 +136,32 @@
         .demo li:nth-child(1+5) = 6<br />
         .demo li:nth-child(2+5) = 7<br />
         .demo li:nth-child(3+5) = 8<br />
+        以此类推....
+    </div>
+    
+    <br /><br /><br />
+    
+    <ul class="demo demo6">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <div class="content">
+        <strong>nth-child(-n+5)<span style="color: red;">反向</span>从第五个元素开始选择，这里的数字你可以自己定义</strong><br />
+        .demo li:nth-child(-n+5){ background: red; border: 1px solid yellow; color: #fff; }<br />
+        n是一个简单的表达式，那么"n"取值是从“0”开始计算。<br />
+        表达示结果，如下:<br />
+        .demo li:nth-child(-0+5) = 5<br />
+        .demo li:nth-child(-1+5) = 4<br />
+        .demo li:nth-child(-2+5) = 3<br />
+        .demo li:nth-child(-3+5) = 2<br />
         以此类推....
     </div>
 </body>
