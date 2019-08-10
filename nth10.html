@@ -9,20 +9,35 @@
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css.css">
+    <style>
+    p:only-of-type { background:#ff0000; }
+    </style>
 </head>
 <body>
-    <h4 class="title">默认</h4>
-    <ul class="demo">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li>10</li>
-    </ul>
+    <h4 class="title">:only-of-type 选择一个元素是它的上级元素的唯一一个相同类型的子元素；</h4>
+    
+    <div>
+        <p>我是子级p元素，在父级中是唯一的一个p元素。所以会被选择中。</p>
+        <span>我是子级span元素，在父级中并不是唯一的span元素。</span>
+        <span>我是子级span元素，在父级中并不是唯一的span元素。</span>
+        <span>我是子级span元素，在父级中并不是唯一的span元素。</span>
+    </div>
+    <div>
+        <p>我是p标签，在父级中并不是唯一的p元素，因为还有一个和我相同的p元素。所以不会被选中。</p>
+        <p>我是p标签，在父级中并不是唯一的p元素，因为还有一个和我相同的p元素。所以不会被选中。</p>
+    </div>
+
+    <xmp>
+        <div>
+            <p>我是子级p元素，在父级中是唯一的一个p元素。所以会被选择中。</p>
+            <span>我是子级span元素，在父级中并不是唯一的span元素。</span>
+            <span>我是子级span元素，在父级中并不是唯一的span元素。</span>
+            <span>我是子级span元素，在父级中并不是唯一的span元素。</span>
+        </div>
+        <div>
+            <p>我是p标签，在父级中并不是唯一的p元素，因为还有一个和我相同的p元素。所以不会被选中。</p>
+            <p>我是p标签，在父级中并不是唯一的p元素，因为还有一个和我相同的p元素。所以不会被选中。</p>
+        </div>
+    </xmp>
 </body>
 </html>
