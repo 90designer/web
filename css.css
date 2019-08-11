@@ -7,28 +7,53 @@ aside {
     top: 0;
     left: 0;
     background-color: #f1f1f1;
+    overflow-y: auto;
 }
 aside dt {
     padding: 15px;
     background-color: #e2e2e2;
 }
 aside dd {
-    padding: 15px;
     border-bottom: 1px solid #e2e2e2;
 }
-aside a { display: block; }
+aside a { 
+    display: block;
+    padding: 15px;
+}
 a { text-decoration: none; }
 
-section {
+#iframeWrap {
     margin-left: 250px;
+}
+section {
     padding: 50px;
 }
-.demo {
-    height: 90px;
+iframe{
+    border-bottom: 4px solid #000000;
+    padding-bottom: 50px;
     margin-bottom: 50px;
-    border-bottom: 1px solid #efefef;
 }
-.demo li {
+section iframe:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+xmp {
+    border-radius: 8px;
+    background-color: #ccc;
+    line-height: 20px;
+    margin-top: 15px;
+    font-size:14px;
+}
+p {
+    padding: 3px 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.demo {
+    height: 55px;
+}
+li,
+.demo a {
     float: left;
     width: 40px;
     height: 40px;
@@ -38,11 +63,11 @@ section {
     text-align: center;
     line-height: 40px;
     font-size: 14px;
+    color: #000;
 }
 .title {
     margin-bottom: 15px;
     font-size: 14px;
-    font-weight: normal;
 }
 .column {
     padding: 10px;
@@ -51,3 +76,8 @@ section {
     font-size: 16px;
     font-weight: bold;
 }
+.content {
+    padding-top: 10px;
+    line-height: 20px;
+}
+.basic1 * { border: 1px solid red; }

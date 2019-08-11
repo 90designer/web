@@ -9,59 +9,64 @@
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
 </head>
 <body>
-    <aside class="menu">
-        <dl>
-            <dt>CSS3 选择器——基本选择器</dt>
-            <dd><a href="javascript: void(0);">****</a></dd>
-        </dl>
-        <dl>
-            <dt>CSS3 选择器——属性选择器</dt>
-            <dd><a href="javascript: void(0);">****</a></dd>
-        </dl>
-        <dl>
-            <dt>CSS3 选择器——伪类选择器</dt>
-            <dd><a href="javascript: void(0);">****</a></dd>
-        </dl>
-    </aside>
-    <section>
-        <header class="column">基础选择器</header>
-        <iframe src="basic1.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic2.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic3.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic4.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic5.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic6.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic7.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic8.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="basic9.html" frameborder="0" width="100%" scrolling="no"></iframe>
-    </section>
-    <section>
-        <header class="column">属性选择器</header>
-        <iframe src="type1.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type2.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type3.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type4.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type5.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type6.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="type7.html" frameborder="0" width="100%" scrolling="no"></iframe>
-    </section>
-    <section>
-        <header class="column">伪类选择器</header>
-        <iframe src="nth1.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth2.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth3.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth4.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth5.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth6.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth7.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth8.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth9.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth10.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth11.html" frameborder="0" width="100%" scrolling="no"></iframe>
-        <iframe src="nth12.html" frameborder="0" width="100%" scrolling="no"></iframe>
-    </section>
+    <aside class="menu" id="asideNav"></aside>
+    <div id="iframeWrap"></div>
+    
+    <script>
+
+        let navHtml = `<dl>`
+        let iframeHtml = `<section>`
+        object.forEach(elem => {
+            navHtml += `<dt>${elem.title}</dt>`
+            iframeHtml += `<header class="column">${elem.title}</header>`
+            elem.data.forEach(item => {
+                navHtml += `<dd><a href="#${item.id}" >${item.text}</a></dd>`
+                iframeHtml += `<iframe src="${item.url}" id="${item.id}" frameborder="0" width="100%" height="${item.height}" scrolling="no"></iframe>`
+            })
+        });
+        navHtml += `</dl>`
+        iframeHtml += `</section>`
+        document.getElementById('asideNav').innerHTML = navHtml
+        document.getElementById('iframeWrap').innerHTML = iframeHtml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        window.onload = function(){
+            console.log(111)
+            let iframe = document.getElementsByTagName('iframe');
+            for(let i = 0; i < iframe.length; i++){
+                if (iframe[i].attachEvent) {
+                    iframe[i].attachEvent("onload", function () {
+                        console.log(iframe[i].contentWindow.document.body.innerHTML);
+                    });
+                } else {
+                    iframe[i].onload = function () {
+                        console.log(iframe[i].contentWindow.document.body.innerHTML);
+                    };
+                }
+            }  
+        }
+       
+    </script>
     
 </body>
 </html>

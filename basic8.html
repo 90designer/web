@@ -9,13 +9,14 @@
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css.css">
+    <style>.active ~ li {background: green;color: yellow; border: 1px solid #ccc;}</style>
 </head>
 <body>
-    <h4 class="title">默认</h4>
+    <h4 class="title">通用兄弟选择器（E 〜 F）</h4>
     <ul class="demo">
         <li>1</li>
         <li>2</li>
-        <li>3</li>
+        <li class="active">3</li>
         <li>4</li>
         <li>5</li>
         <li>6</li>
@@ -24,5 +25,24 @@
         <li>9</li>
         <li>10</li>
     </ul>
+    <div class="content">
+        选择某元素后面的所有兄弟元素（选择相邻的所有兄弟元素），和相邻选择器类似（相邻选择器只选择相邻的一个元素）<br />
+        .active ~ li {background: green;color: yellow; border: 1px solid #ccc;}<br />
+        选择中了li.active 元素后面的所有兄弟元素li
+    </div>
+    <xmp>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li class="active">3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+    </xmp>
 </body>
 </html>
