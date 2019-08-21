@@ -24,12 +24,6 @@
                     <ul class="clearfix">
                         <li>
                             <a href="index.html" title="首页">首页</a>
-                            <ul>
-                                <li><a href="" title="朗朗简介">朗朗简介</a></li>
-                                <li><a href="" title="朗朗优势">朗朗优势</a></li>
-                                <li><a href="" title="核心团队">核心团队</a></li>
-                                <li><a href="" title="朗朗历程">朗朗历程</a></li>
-                            </ul>
                         </li>
                         <li class="current">
                             <a href="" title="走进朗朗">走进朗朗</a>
@@ -37,57 +31,30 @@
                                 <li><a href="" title="朗朗简介">朗朗简介</a></li>
                                 <li><a href="" title="朗朗优势">朗朗优势</a></li>
                                 <li><a href="" title="核心团队">核心团队</a></li>
-                                <li>
-                                    <a href="" title="朗朗历程">朗朗历程</a>
-                                    <ul>
-                                        <li>
-                                            <a href="" title="朗朗简介">朗朗简介</a>
-                                            <ul>
-                                                <li><a href="" title="朗朗简介">朗朗简介</a></li>
-                                                <li><a href="" title="朗朗优势">朗朗优势</a></li>
-                                                <li><a href="" title="核心团队">核心团队</a></li>
-                                                <li><a href="" title="朗朗历程">朗朗历程</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="" title="朗朗优势">朗朗优势</a>
-                                            <ul>
-                                                <li><a href="" title="朗朗简介">朗朗简介</a></li>
-                                                <li><a href="" title="朗朗优势">朗朗优势</a></li>
-                                                <li>
-                                                    <a href="" title="核心团队">核心团队</a>
-                                                    <ul>
-                                                        <li><a href="" title="朗朗简介">朗朗简介</a></li>
-                                                        <li><a href="" title="朗朗优势">朗朗优势</a></li>
-                                                        <li><a href="" title="核心团队">核心团队</a></li>
-                                                        <li><a href="" title="朗朗历程">朗朗历程</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="" title="朗朗历程">朗朗历程</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="" title="核心团队">核心团队</a></li>
-                                        <li><a href="" title="朗朗历程">朗朗历程</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="" title="朗朗历程">朗朗历程</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="news.php" title="资讯动态">资讯动态</a>
                             <ul>
-                                <li><a href="" title="朗朗简介">朗朗简介</a></li>
-                                <li><a href="" title="朗朗优势">朗朗优势</a></li>
-                                <li><a href="" title="核心团队">核心团队</a></li>
-                                <li><a href="" title="朗朗历程">朗朗历程</a></li>
+                                <li><a href="" title="行业动态">行业动态</a></li>
+                                <li><a href="" title="朗朗资讯">朗朗资讯</a></li>
+                                <li><a href="" title="媒体报道">媒体报道</a></li>
+                                <li><a href="" title="公益活动">公益活动</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="partner.php" title="合作伙伴">合作伙伴</a>
+                            <ul><li><a href="" title="门诊列表">门诊列表</a></li></ul>
+                        </li><li>
+                            <a href="partner.php" title="辅助功能">辅助功能</a>
+                        </li>
+                        <li>
+                            <a href="news.php" title="联系我们">联系我们</a>
                             <ul>
-                                <li><a href="" title="朗朗简介">朗朗简介</a></li>
-                                <li><a href="" title="朗朗优势">朗朗优势</a></li>
-                                <li><a href="" title="核心团队">核心团队</a></li>
-                                <li><a href="" title="朗朗历程">朗朗历程</a></li>
+                                <li><a href="" title="联系我们">联系我们</a></li>
+                                <li><a href="" title="加入我们">加入我们</a></li>
+                                <li><a href="" title="在线留言">在线留言</a></li>
                             </ul>
                         </li>
                     </ul>
