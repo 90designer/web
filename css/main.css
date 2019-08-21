@@ -1,7 +1,7 @@
 @charset "UTF-8";
-.info-list ul {
+.info-list ul, .shop-wrap .item {
   height: 1%; }
-  .info-list ul:after {
+  .info-list ul:after, .shop-wrap .item:after {
     content: ".";
     display: block;
     height: 0;
@@ -242,3 +242,56 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden; }
+
+/* 门诊列表 */
+.shop-wrap .item {
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 80px; }
+.shop-wrap .item:last-child {
+  margin-bottom: 0; }
+  .shop-wrap .item:last-child .content:after {
+    display: none; }
+.shop-wrap .item:nth-child(2n) .img-wrap,
+.shop-wrap .item:nth-child(2n) .content {
+  float: right; }
+.shop-wrap .item:nth-child(2n) .shop-logo {
+  left: 0; }
+.shop-wrap .img-wrap,
+.shop-wrap .content {
+  float: left;
+  width: 50%; }
+.shop-wrap .content {
+  padding: 48px 30px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  .shop-wrap .content:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    width: 60px;
+    margin-left: -30px;
+    border-top: 1px solid #dddddd; }
+.shop-wrap .title {
+  margin-bottom: 18px; }
+.shop-wrap .dec {
+  margin-bottom: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
+.shop-wrap .img-wrap {
+  position: relative; }
+  .shop-wrap .img-wrap .shop-logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 68px;
+    width: 140px;
+    background-color: #fff;
+    margin-top: -34px; }

@@ -239,3 +239,60 @@
         @include ell(1);
     }
 }
+
+/* 门诊列表 */
+.shop-wrap {
+    .item {
+        position: relative;
+        background-color: #fff;
+        margin-bottom: 80px;
+        @extend %clearfix;
+    }
+    .item:last-child {
+        margin-bottom: 0;
+        .content:after { display: none; }
+    }
+    .item:nth-child(2n) {
+        .img-wrap,
+        .content { float: right; }
+        .shop-logo {
+            left: 0;
+        }
+    }
+    .img-wrap,
+    .content { 
+        float: left;
+        width: 50%;
+    }
+    .content {
+        padding: 48px 30px 0;
+        @include webkit(box-sizing, border-box);
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -40px;
+            width: 60px;
+            margin-left: -30px;
+            border-top: 1px solid #dddddd;
+        }
+    }
+    .title { margin-bottom: 18px; }
+    .dec { 
+        margin-bottom: 18px;
+        @include ell(1);
+    }
+    .img-wrap {
+        position: relative;
+        .shop-logo {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            height: 68px;
+            width: 140px;
+            background-color: #fff;
+            margin-top: -34px;
+        }
+    }
+}

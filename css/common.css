@@ -8,6 +8,9 @@
     clear: both;
     visibility: hidden; }
 
+body > header {
+  background-color: #fff; }
+
 .color-main {
   color: #01aab6; }
 
@@ -44,6 +47,9 @@
 
 .p-a {
   position: absolute; }
+
+.bg-color-f7 {
+  background-color: #f7f7f7; }
 
 .logo {
   margin-top: 30px;
@@ -338,7 +344,8 @@ body > footer {
     color: #fff; }
 
 .category-menu {
-  border-bottom: 1px solid #f1f1f1; }
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #fff; }
   .category-menu li {
     float: left;
     margin-right: 18px; }
@@ -425,6 +432,8 @@ body > footer {
   .pagination span {
     background-color: #01aab6;
     color: #fff; }
+  .pagination.shop-module a {
+    background-color: #eeeeee; }
 
 .clearfix:after {
   content: ".";

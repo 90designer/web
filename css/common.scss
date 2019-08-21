@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import 'sassConfig';
 
+body > header { background-color: #fff; }
+
 .color-main { color: $color-main; }
 .color-second { color: $color-second; }
 .text-main { color: $text-main; }
@@ -25,6 +27,11 @@
 //position
 .p-r { position: relative; }
 .p-a { position: absolute; }
+
+// background-color
+.bg-color-f7 { 
+    background-color: #f7f7f7;
+ }
 
 //header
 .logo {
@@ -347,6 +354,7 @@ body > footer {
 }
 .category-menu {
     border-bottom: 1px solid #f1f1f1;
+    background-color: #fff;
     li { 
         float: left;
         margin-right: 18px;
@@ -435,6 +443,9 @@ body > footer {
     span {
         background-color: $color-main;
         color: #fff;
+    }
+    &.shop-module {
+        a { background-color: #eeeeee; }
     }
 }
 
